@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block title %}Log in{% endblock %}
+{% block content %}
+<div class="auth-wrap"><div class="auth-aside"><div class="eyebrow">WELCOME BACK</div><h1>Your campus,<br>within reach.</h1><p>One place to find spaces, manage requests and keep your plans moving.</p><div class="auth-feature"><span>✓</span><div><strong>Clear availability</strong><small>Know before you book.</small></div></div><div class="auth-feature"><span>✓</span><div><strong>Conflict protection</strong><small>No overlapping requests.</small></div></div></div>
+<div class="auth-card"><div class="form-kicker">YOUR ACCOUNT</div><h2>Log in to CampusBook</h2><p class="muted">Enter your account details to continue.</p><form method="post" class="form">
+<label>Email address<input type="email" name="email" placeholder="you@college.edu" required autocomplete="email"></label>
+<label>Password<input type="password" name="password" placeholder="Your password" required autocomplete="current-password"></label>
+<button class="btn btn-primary btn-full" type="submit">Log in <span>→</span></button></form><p class="form-foot">New here? <a href="{{ url_for('register') }}">Create an account</a></p>
+<div class="demo-box"><strong>Demo administrator</strong><span>Email: admin@campus.local</span><span>Password: Admin123!</span><small>Change this demo password before using the app beyond a local demo.</small></div></div></div>
+{% endblock %}
